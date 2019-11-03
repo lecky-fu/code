@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"algorithm": "cpp",
+			"cstdlib": "cpp",
+			"set": "cpp",
+			"string": "cpp",
+			"iosfwd": "cpp",
+			"unordered_set": "cpp",
+			"*.tcc": "cpp",
+			"deque": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp"
+		}
+	}
+}
