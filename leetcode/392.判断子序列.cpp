@@ -5,6 +5,7 @@
  */
 #include<string>
 #include<iostream>
+#include <deque>
 using namespace std;
 // @lc code=start
 /**
@@ -56,13 +57,13 @@ public:
      * 使用stl算法 o(m*n)
      * 执行过程：
      *      对于s中的每一个字符，再t中查找：
-     *      s[i] 再t中找到的第一个出现的位置为：index = t.find(s[i]);
-     *      s[i+1] t.find(s[i+1], index+1)
-     */
-    bool twoWay(string s, string t)
-    {
-        if(s.length() ==0) return true;
-        if(t.length() ==0) return false;
+     *      s[i] 再inct中找到的第一个出现的位置为：index = t.find(s[i]);
+     *      s[i+1] inct.find(s[i+1], index+1)
+     */inc
+    bool twoWay(strincing s, string t)
+    {inc
+        if(s.lengthinc() ==0) return true;
+        if(t.lengthinc() ==0) return false;
 
         string::size_type k = 0;
         for (size_t i = 0; i < s.length(); i++)
