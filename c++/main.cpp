@@ -2,6 +2,8 @@
 #include<iostream>
 // #include"overload.h"
 #include "stringutils.h"
+#include<unordered_set>
+#include "../leetcode/utils.h"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -18,13 +20,8 @@ int main(int argc, char const *argv[])
     string t = "fsfsf";
     bool dp[s.length()+1][t.length()+1];
 
-    utilss::string str("sfsdf");
-    utilss::string st(str);
-    st = str;
-    st = "234234";
-    st[0];
-    std::cout << "st==str : "<<(st==str)<<std::endl;
-    std::cout << "st+str : "<<(st+=str)<<std::endl;
-    std::cout << "st+str : "<<(st+="99999")<<std::endl;
+
+    utilss::test();
+
     return 0;
 }

@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cstring>
+#include<unordered_set>
+#include"../leetcode/utils.h"
+
 namespace utilss
 {
     class string
@@ -17,16 +20,42 @@ namespace utilss
             string& operator=(const string &str);
             string& operator=(const char *c);
             int len(){ return size;}
-            char* c_str(){return data;}
+            const char* c_str(){return data;}
             char& operator[](int index)const;
             string& operator+=(const string &str);
             string& operator+=(const char *c);
-
+            //重载<，RB_Tree数据结构排序使用
+            bool operator<(const string& str)const;
+            
             //友元函数定义，命名空间操作符重载
             friend bool operator==(const string &str1,const string &str2);
             friend std::ostream& operator<<(std::ostream &os,const string &str);
+            friend struct stringutilsHash;
+            friend struct stringutilsCmp;
     };
 
+    //定义外部仿函数，用于hash数据结构
+    struct stringutilsCmp
+    {
+        bool operator()(const utilss::string &lhs,const string &rhs)const
+        {
+            if (lhs == rhs)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    };
+    struct stringutilsHash
+    {
+        std::size_t operator()(const utilss::string& str)const
+        {
+            return std::hash<std::string>()(std::string(str.data));
+        }
+    };
 
     string::string()
     {
@@ -148,6 +177,26 @@ namespace utilss
     {
         os << str.data;
         return os;
+    }
+
+    void test()
+    {
+        utilss::string str("sfsdf");
+        utilss::string st(str);
+        st = str;
+        st = "234234";
+        st[0];
+        std::cout << "st==str : "<<(st==str)<<std::endl;
+        std::cout << "st+str : "<<(st+=str)<<std::endl;
+        std::cout << "st+str : "<<(st+="99999")<<std::endl;
+        std::cout << "st.c_str() : "<<(st.c_str())<<std::endl;
+
+        //hashset
+        unordered_set<utilss::string,utilss::stringutilsHash,utilss::stringutilsCmp> myset;
+        myset.insert(st);
+        myset.insert(str);
+
+        PRINT_COLL("myset",myset);
     }
 }
 

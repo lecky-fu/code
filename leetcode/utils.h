@@ -26,6 +26,17 @@ void PRINT_COLL(T& coll)
 }
 
 template<class T>
+void PRINT_COLL(std::string collname,T& coll)
+{
+    cout << collname <<"=[";
+    for(const auto &it:coll )
+    {
+        cout << it << ",";
+    }
+    cout <<"]"<<endl;
+}
+
+template<class T>
 void PRINT_NUMS(const T& t)
 {
     cout << t << endl;
