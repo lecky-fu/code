@@ -43,4 +43,5 @@ void CHECK_RESULT(const string funcname,const T result,const T wanted)
         cout<<funcname <<" ok!"<<endl;
     }
 }
+
 #endif //LEETCODE_UTILS_H

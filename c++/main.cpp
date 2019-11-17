@@ -1,7 +1,7 @@
 #include <vector>
 #include<iostream>
 // #include"overload.h"
-#include"string.h"
+#include "stringutils.h"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -18,6 +18,13 @@ int main(int argc, char const *argv[])
     string t = "fsfsf";
     bool dp[s.length()+1][t.length()+1];
 
-    utilss::string str("2342");
+    utilss::string str("sfsdf");
+    utilss::string st(str);
+    st = str;
+    st = "234234";
+    st[0];
+    std::cout << "st==str : "<<(st==str)<<std::endl;
+    std::cout << "st+str : "<<(st+=str)<<std::endl;
+    std::cout << "st+str : "<<(st+="99999")<<std::endl;
     return 0;
 }

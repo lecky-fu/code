@@ -24,7 +24,8 @@ public:
 
         for (size_t i = 0; i < cost.size(); i++)
         {
-            if(i < 2) {
+            if(i < 2) 
+            {
                 dp[i] = cost[i];
             }
             else
