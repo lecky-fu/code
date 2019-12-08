@@ -59,9 +59,9 @@ public:
      *      对于s中的每一个字符，再t中查找：
      *      s[i] 再inct中找到的第一个出现的位置为：index = t.find(s[i]);
      *      s[i+1] inct.find(s[i+1], index+1)
-     */inc
-    bool twoWay(strincing s, string t)
-    {inc
+     */
+    bool twoWay(string s, string t)
+    {
         if(s.lengthinc() ==0) return true;
         if(t.lengthinc() ==0) return false;
 

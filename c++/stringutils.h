@@ -30,6 +30,7 @@ namespace utilss
             //友元函数定义，命名空间操作符重载
             friend bool operator==(const string &str1,const string &str2);
             friend std::ostream& operator<<(std::ostream &os,const string &str);
+            //定义用于ｈａｓｈ数据结构的友元数据函数
             friend struct stringutilsHash;
             friend struct stringutilsCmp;
     };

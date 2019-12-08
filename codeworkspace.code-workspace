@@ -1,55 +1,31 @@
 {
 	"folders": [
 		{
+			"path": "/media/lecky-fu/722cf6ba-9133-4974-b0c8-1793742f038b/document/c++/leveldb"
+		},
+		{
 			"path": "."
+		},
+		{
+			"path": "/media/lecky-fu/722cf6ba-9133-4974-b0c8-1793742f038b/document/c++/boost_1_71_0"
 		}
 	],
 	"settings": {
 		"files.associations": {
-			"algorithm": "cpp",
-			"cstdlib": "cpp",
-			"set": "cpp",
-			"string": "cpp",
-			"iosfwd": "cpp",
-			"unordered_set": "cpp",
+			"*.ipp": "cpp",
 			"*.tcc": "cpp",
 			"deque": "cpp",
+			"list": "cpp",
+			"string": "cpp",
 			"unordered_map": "cpp",
 			"vector": "cpp",
-			"array": "cpp",
-			"atomic": "cpp",
-			"cctype": "cpp",
-			"clocale": "cpp",
-			"cmath": "cpp",
-			"cstdarg": "cpp",
-			"cstddef": "cpp",
-			"cstdint": "cpp",
-			"cstdio": "cpp",
-			"cwchar": "cpp",
-			"cwctype": "cpp",
-			"exception": "cpp",
-			"functional": "cpp",
-			"iterator": "cpp",
-			"memory": "cpp",
-			"memory_resource": "cpp",
-			"numeric": "cpp",
-			"random": "cpp",
-			"system_error": "cpp",
-			"tuple": "cpp",
-			"type_traits": "cpp",
-			"utility": "cpp",
-			"fstream": "cpp",
-			"initializer_list": "cpp",
-			"iostream": "cpp",
-			"istream": "cpp",
-			"limits": "cpp",
-			"new": "cpp",
-			"ostream": "cpp",
-			"sstream": "cpp",
-			"stdexcept": "cpp",
-			"streambuf": "cpp",
-			"typeinfo": "cpp",
-			"cstring": "cpp"
+			"hash_map": "cpp",
+			"hash_set": "cpp",
+			"unordered_set": "cpp",
+			"string_view": "cpp",
+			"rope": "cpp",
+			"chrono": "cpp",
+			"algorithm": "cpp"
 		}
 	}
 }

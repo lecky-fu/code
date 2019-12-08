@@ -5,6 +5,7 @@
  */
 
 #include "utils.h"
+#include <boost>
 // @lc code=start
 
 class Solution {
